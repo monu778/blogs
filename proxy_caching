@@ -1,0 +1,30 @@
+proxy – server processes requests to determine how they should be handled. 
+Proxy servers allow enterprises to structure and safeguard their networks while transparently providing additional features to users.
+
+Proxy caching is a feature of proxy servers that stores content on the proxy server itself, allowing web services to share those resources to more users. 
+The proxy server coordinates with the source server to cache documents such as files, images and web pages.
+
+How proxy caching works
+Proxies act as a gateway between the user and the source server, storing (or caching) the server’s resources. When the user attempts to access a resource, the proxy checks to see if it has a recent copy of the resource on hand. If so, the resource is immediately delivered to the user. If not, the resource is retrieved from the source and simultaneously cached to the proxy and delivered to the user.
+
+Step-by-step, here’s how proxy caching works:
+
+A user opens a webpage containing static content such as media, JavaScript or CSS.
+The user’s browser automatically connects to a proxy server. This could be a content delivery network (CDN) which caches content in various locations around the world.
+The browser requests resources from the proxy server. The proxy server checks to see if it not only has the resource, but if the resource is recent. If the resource is old or missing, the proxy fetches a new copy from the source.
+The proxy delivers the resource to the browser. If the proxy had to fetch a new copy, it caches the copy for future use.
+
+
+Once a proxy refreshes a resource, it resets the resource’s “expiration date” to prevent it from being reflagged as out-of-date. The resource will be delivered as-is until a certain time passes, at which point the proxy server will re-check the source.
+
+Proxy cache states
+Objects requested from a proxy cache can exist in one of three states: fresh, stale or nonexistent. These states are determined by the age and availability of the object on the proxy server as it compares to the source.
+
+Fresh objects
+Fresh objects are ready to be served in place of the original content. Freshness is determined by metadata which defines either an expiration date or the maximum age of the object. Freshness can also be determined using an aging factor based on the object’s last modification date.
+
+Stale objects
+Stale objects are cached objects that are no longer usable. Objects that passed their expiration date or age limit have to be re-cached from the source server before they can be served by the proxy. After encountering a stale object, the proxy simultaneously caches the updated object from the source system and sends it to the user.
+
+Nonexistent objects
+Objects that exist on the server but not on the proxy follow the same procedure as stale objects. If an object exists on the proxy but not on the server, then the proxy doesn’t serve the cached copy.
