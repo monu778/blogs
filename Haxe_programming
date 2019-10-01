@@ -1,0 +1,1 @@
+@:keep -> is a metadata tag that instructs the compiler's dead code elimination feature not to remove the class or function, even if it believes that the class or function is unused.
