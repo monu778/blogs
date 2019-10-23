@@ -1,0 +1,5 @@
+Sass (Syntactically awesome style sheets) is a style sheet language initially designed by Hampton Catlin and developed by Natalie Weizenbaum.
+Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.
+
+How to Use Sass
+Preprocessors such as Sass are widely used in our RoR world and make writing CSS much easier and clutter free. Most Rails developers are aware of advantages such as nesting, reference selector, variables, mixins, or extending directives. But Sass is much more than that!
