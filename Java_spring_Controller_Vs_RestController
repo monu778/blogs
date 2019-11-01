@@ -1,0 +1,20 @@
+https://javarevisited.blogspot.com/2017/08/difference-between-restcontroller-and-controller-annotations-spring-mvc-rest.html#ixzz6428KoL5b
+The @RestController annotation in Spring MVC is nothing but a combination of @Controller and @ResponseBody annotation. It was added into Spring 4.0 to make the development of RESTful Web Services in Spring framework easier.
+
+The job of @Controller is to create a Map of model object and find a view but @RestController simply return the object and object data is directly written into HTTP response as JSON or XML.
+
+the following two code snippet are equal in Spring MVC:
+
+@Controller
+@ResponseBody
+public class MVCController { 
+   .. your logic
+}
+
+@RestController
+public class RestFulController { 
+  .... your logic
+}
+
+
+Read more: https://javarevisited.blogspot.com/2017/08/difference-between-restcontroller-and-controller-annotations-spring-mvc-rest.html#ixzz6428Z5Daz
