@@ -2,6 +2,18 @@ store
 reducers
 actions
 
+Action Creatore --> 
+  Can Run Aysnc Code
+  Shouldnot prepare the state update too much
+ 
+ Reducer -->
+  Pure, Sync Code Only!
+  Core Redux Concept: Reducers update the State
+  
+  Dont  put too much logic in action creatore.
+  
+  
+
 
 
 redux --> createStore,CombinedReducers,applyMiddleWare,compose
