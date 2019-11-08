@@ -1,0 +1,22 @@
+store
+reducers
+actions
+
+
+
+redux --> createStore,CombinedReducers,applyMiddleWare,compose
+composeEnhancers  = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose (for working redux devTool)
+react-redux --> connect(mapStateToProps,mapDispatcherToProps)(component) --> 
+redux-thunk --> for async operations in action creators -->  
+
+const Logger = (store) => {
+
+  retrun  next => {
+    
+    return action => {
+    
+      return next(action)
+    }
+  }
+
+}
