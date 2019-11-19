@@ -1,0 +1,33 @@
+list open files:
+
+lsof -i <protocol>:<port> : The -i (internet) option allows you to see the files opened by processes associated with
+                             network and internet connections.
+                             
+Address already in use — bind 
+
+lsof -i :3000
+
+kill -9 <pid>
+
+ps -ef | grep java
+
+curl can be useful for determining if your application can reach another service, such as a database, or checking if your service is healthy.
+
+Use -I option to display headers only
+
+NGROk : Ngrok is a great tool to exposes your local servers to the public internet over secure tunnels.
+
+Usage
+Start your local server then expose it to the web with ngrok:
+ngrok <protocol> <port>
+              What it’s good for
+              Demoing web sites without deploying
+              Building webhook consumers on your dev machine
+              Testing mobile apps connected to your locally running backend
+              Stable addresses for your connected devices that are deployed in the field
+              Running personal cloud services from your home
+
+
+scp
+
+scp -i <path/to/keyfile> -r directory/to/copy user@ec2-xx-xx-xxx-xxx.compute-1.amazonaws.com:path/to/directory.
