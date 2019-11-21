@@ -1,0 +1,23 @@
+const numbers = {
+  one: 1,
+  two: 2
+}
+Object.keys(numbers);    [ 'one', 'two' ]
+
+from ES2017
+const numbers = {
+  one: 1,
+  two: 2
+}
+Object.values(numbers);  // [ 1, 2 ]
+
+const numbers = {
+  one: 1,
+  two: 2
+}
+Object.entries(numbers)  // [ ['one', 1], ['two', 2] ]
+
+Browser Support
+Object.keys has the best support. When I say best, it means it supports Internet Explorer 😆. 
+The other, Object.values and Object.entries, unfortunately,
+don’t support Internet Explorer. Luckily, polyfill exists which can improve support.
