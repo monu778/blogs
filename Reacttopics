@@ -1,0 +1,19 @@
+Passing Query parameters in route
+
+queryParams = [];
+for (i in this.state.prp) {
+  queryParams.push(encodeURIComponent(i) + " = "+encodeURIComponent(this.state.prp[i]))}
+  }
+ queryString = queryParams.join("&");
+this.props.history.push({
+  pathname:'/path',
+  seatch:"?"+queryString
+ });
+ 
+ componentDidMount() {
+  const  query  = new URLSearchParams(this.props.location.search)
+  
+  for (let param of query.entries()) {
+       //[proerty,value]
+  
+  }
