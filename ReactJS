@@ -1,4 +1,4 @@
-Passing Query parameters in route
+* Passing Query parameters in route
 
 queryParams = [];
 for (i in this.state.prp) {
@@ -17,3 +17,21 @@ this.props.history.push({
        //[proerty,value]
   
   }
+  
+  URLSearchParams  is a built-in object, shipping with vanilla JavaScript. It returns an object, which exposes the entries()  method. 
+  entries()  returns an Iterator - basically a construct which can be used in a for...of...  loop
+  
+ * withRouter High order component.
+ 
+ this hoc used for passing router props from parent
+ 
+   import { withRouter } from react-router-dom
+   
+   const post = () => {
+   
+   }
+   
+   export default withRouter(props)
+   
+   
+this.props.match.params
